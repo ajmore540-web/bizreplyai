@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BizReply AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:Arial;background:#f6f7fb;padding:20px">
+
+<h2>BizReply AI</h2>
+<p>Professional customer replies in seconds</p>
+
+<textarea id="msg" placeholder="Paste customer message here"
+style="width:100%;height:110px;padding:10px;border-radius:6px"></textarea>
+<br><br>
+
+<select id="tone" style="width:100%;padding:10px;border-radius:6px">
+  <option>Professional</option>
+  <option>Friendly</option>
+  <option>Sales-Focused</option>
+  <option>Support / Apology</option>
+</select>
+<br><br>
+
+<button onclick="generate()"
+style="width:100%;padding:15px;background:#4f46e5;color:white;
+border:none;border-radius:8px;font-size:16px">
+Generate Reply
+</button>
+
+<h3>Generated Reply</h3>
+<div id="output"
+style="background:white;padding:12px;border-radius:6px;min-height:80px"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
